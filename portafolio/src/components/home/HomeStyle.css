@@ -1,0 +1,161 @@
+.home_section{
+    margin: 10% 0 10% 0;
+    position: relative;
+
+}
+
+
+.home_content{
+    grid-template-columns: 50% repeat(1,1fr);
+    padding: 5rem 0 5rem 0 ;
+    column-gap: 2rem;
+    align-items: center;
+    color: rgb(255, 249, 249);
+}
+
+
+.home_img{
+    background: url(../../assets/img/image-home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+    order: 1;
+    justify-self: center;
+    width: 80%;
+    height: 80%;
+    animation: profile_animate 8s ease-in-out infinite 0.01s;
+}
+
+.espacioletras{
+    padding: 1%;
+}
+
+
+.description{
+    padding-top: 1.5em;
+}
+
+.home_title{
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-25);
+    color: rgb(255, 249, 249);
+}
+
+.home_description{
+    max-width: 50em;
+    margin-bottom: var(--mb-3);
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+/*Animacion*/
+
+@keyframes profile_animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For large devices */
+@media screen and (max-width: 999px) {
+
+
+    .home_content{
+
+        grid-template-columns:50% repeat(1,1fr);
+        width: auto;
+        
+    }
+
+    .home_description{
+        max-width: initial;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .home_img{
+        max-width: 250px;
+        height: 350px;
+        box-shadow: inset 0 0 0 0 rgb(255, 255, 255 / 30%);
+    }
+  
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+
+
+    .home_section{
+        justify-content: center;
+    }
+
+    .home_content{
+        grid-template-columns:100%;
+        margin: auto;
+        width: auto;
+        padding-top: 3.5rem;
+        
+    
+    }
+
+    .description .button{
+        margin: auto;
+    }
+
+
+    .home_data{
+        grid-column: 1;
+    }
+
+
+    .home_img{
+        box-shadow: inset 0 0 0 6px rgb(255, 255, 255 / 30%);
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        justify-content: center;
+        order: initial;
+        justify-self: initial;
+    }
+  
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+    .home_img{
+        width: 180px;
+        height: 180px;
+
+    }
+
+  
+}
+
+
+
