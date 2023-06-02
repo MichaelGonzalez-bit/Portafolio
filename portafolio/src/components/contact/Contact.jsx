@@ -1,6 +1,7 @@
 import React,{ useRef  } from 'react';
 import "./ContactStyle.css";
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 
 const Contact = () => {
   const form = useRef();
@@ -11,6 +12,12 @@ const Contact = () => {
     emailjs.sendForm('service_ochnpkn', 'template_s6g8yfl', form.current, 'Z-m3bBeSs8gs3q946')
         .then((result) => {
           console.log(result.text);
+          e.target.reset()
+          swal("Sending...", {
+            buttons: false,
+            timer: 1800,
+            className: "swal-modal",
+          });  
       }, (error) => {
           console.log(error.text);
       });
@@ -30,7 +37,7 @@ const Contact = () => {
               <span className="contact_card-data"></span>
               <a href="https://www.linkedin.com/in/michael-medina-9a6673213/" target="_blank" rel="noreferrer" className="contact_button">Write me <i className="bx bx-right-arrow-alt contact_button-icon"></i></a>
             </div>
-
+            
             <div className="contact_card">
               <i className="bx bxl-github contact_card-icon"></i>
               <h3 className="contact_card-title">GitHub</h3>

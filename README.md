@@ -29,6 +29,7 @@ El proyecto utiliza las siguientes dependencias de npm:
 emailjs-com: Para enviar correos electrónicos desde el formulario de contacto.
 react-icons: Para utilizar iconos en el portafolio.
 react-multi-carousel: Para crear un carrusel de proyectos.
+SweetAlert : Para alertas personalizadas 
 
 
 # Ejecución

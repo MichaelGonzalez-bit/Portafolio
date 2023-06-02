@@ -140,6 +140,17 @@
 
 }
 
+
+.swal-modal {
+    color: #c0bdca;
+    background: #2196f3;
+    box-shadow:0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3 ;
+    font-family: 'Ciber';
+    src: url(../../assets/font/Cyberpunk.ttf);
+    font-size: 45em;
+  }
+  
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
