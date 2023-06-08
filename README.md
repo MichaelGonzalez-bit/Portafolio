@@ -26,16 +26,16 @@ npm install
 
 El proyecto utiliza las siguientes dependencias de npm:
 
-emailjs-com: Para enviar correos electrónicos desde el formulario de contacto.
-react-icons: Para utilizar iconos en el portafolio.
-react-multi-carousel: Para crear un carrusel de proyectos.
-SweetAlert : Para alertas personalizadas 
-
+```
+1.emailjs-com: Para enviar correos electrónicos desde el formulario de contacto.
+2.react-icons: Para utilizar iconos en el portafolio.
+3.react-multi-carousel: Para crear un carrusel de proyectos.
+4.SweetAlert : Para alertas personalizadas 
+```
 
 # Ejecución
 Una vez que hayas instalado las dependencias, puedes ejecutar el proyecto utilizando el siguiente comando:
 
 ``` bash
-cd portafolio
 npm run dev
 ```
