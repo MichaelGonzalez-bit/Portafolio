@@ -1,18 +1,18 @@
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import "./SkillsStyle.css";
+
 import meter1 from "../../assets/img/meter1.svg";
 import meter2 from "../../assets/img/meter2.svg";
 import meter3 from "../../assets/img/meter3.svg";
 import meter5 from "../../assets/img/meter5.svg";
 import meter6 from "../../assets/img/meter6.svg";
 import meter7 from "../../assets/img/meter7.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "./SkillsStyle.css";
 
 const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -29,6 +29,16 @@ const Skills = () => {
       items: 1,
     },
   };
+
+  const skillsData = [
+    { image: meter1, name: "Python" },
+    { image: meter2, name: "ReactJs" },
+    { image: meter3, name: "Javascript" },
+    { image: meter5, name: "Html" },
+    { image: meter6, name: "Css" },
+    { image: meter7, name: "Java" },
+  ];
+
   return (
     <section className="skill" id="skills">
       <div className="container">
@@ -45,30 +55,12 @@ const Skills = () => {
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
               >
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Python</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>ReactJs</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Javascript</h5>
-                </div>
-                <div className="item">
-                  <img src={meter5} alt="Image" />
-                  <h5>Html</h5>
-                </div>
-                <div className="item">
-                  <img src={meter6} alt="Image" />
-                  <h5>Css</h5>
-                </div>
-                <div className="item">
-                  <img src={meter7} alt="Image" />
-                  <h5>Java</h5>
-                </div>
+                {skillsData.map((skill, index) => (
+                  <div className="item" key={index}>
+                    <img src={skill.image} alt="Image" />
+                    <h5>{skill.name}</h5>
+                  </div>
+                ))}
               </Carousel>
             </div>
           </div>

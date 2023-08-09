@@ -2,6 +2,9 @@ import React from "react";
 import primer from "../../assets/img/project-img1.png";
 import second from "../../assets/img/project-img2.png";
 import three from "../../assets/img/project-img3.png";
+import four from "../../assets/img/project-img4.png";
+import five from "../../assets/img/project-img5.png";
+import six from "../../assets/img/project-img6.png";
 import "./ProjectsStyle.css";
 
 const Projects = () => {
@@ -64,7 +67,7 @@ const Projects = () => {
       <div className="face face1">
         <div className="content">
            <i className="fab fa-windows"></i>            
-          <img src={primer} alt="" />
+          <img src={four} alt="" />
         </div>
       </div>
       <div className="face face2">
@@ -79,7 +82,7 @@ const Projects = () => {
       <div className="face face1">
       <div className="content">
            <i className="fab fa-windows"></i>            
-          <img src={three} alt="" />
+          <img src={five} alt="" />
         </div>
       </div>
       <div className="face face2">
@@ -95,7 +98,7 @@ const Projects = () => {
       <div className="face face1">
       <div className="content">
            <i className="fab fa-windows"></i>            
-          <img src={three} alt="" />
+          <img src={six} alt="" />
         </div>
       </div>
       <div className="face face2">

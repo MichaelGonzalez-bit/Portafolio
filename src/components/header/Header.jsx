@@ -34,6 +34,12 @@ const Header = () => {
                 Contact
               </a>
             </li>
+            <li className="nav_item">
+              <a href="#footer" className="nav_link active-link" onClick={() => showMenu(!Toggle)}>
+                <i className="uil uil-message nav_icon"></i>
+                Acerca de
+              </a>
+            </li>
           </ul>
           <i
             className="uil uil-times nav_close "

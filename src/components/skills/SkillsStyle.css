@@ -45,20 +45,41 @@
 
   .item{
     margin-top: 30%;
+    position: relative; 
   }
+
+
+  .item::before {
+    content: "";
+    position: absolute;
+    bottom: 35%;  /* Ajusta según la distancia que quieras del trampolín a la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;  
+    height: 5px; 
+    background: #2196f3;
+    border-radius: 50%;  
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;  /* Efecto neón */
+}
 
   .item img {
     animation: moveUpDown 2s infinite alternate ease-in-out;
   }
+
   
   @keyframes moveUpDown {
-    0% {
-      transform: translateY(-10px);
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
     }
-    100% {
-      transform: translateY(10px);
+    40% {
+      transform: translateY(-20px); 
+    }
+    60% {
+      transform: translateY(-10px); 
     }
   }
 
+
+  
   
   

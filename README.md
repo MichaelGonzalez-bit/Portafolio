@@ -2,6 +2,13 @@
 
 Este es mi portafolio personal, creado con React y Vite.
 
+# Puedes verlo Ingresnado al siguiente Link 
+
+```bash
+https://michaelgonzalez-bit.github.io/Portafolio/
+
+```
+
 Mi portafolio web ha sido desarrollado en React.js y muestra una selección de proyectos destacados en los cuales he trabajado. A través de este portafolio, podrás obtener una visión más detallada de mis habilidades y experiencia en el desarrollo full-stack utilizando tecnologías como React.js, Python, Java, JavaScript, CSS, HTML y Three.js.
 
 En él, encontrarás ejemplos de proyectos como la Página Web E-commerce para High Tide, la Página Web para AnimalExpress y el desarrollo de la Página Web para Raíces Reales, donde también incorporé aspectos 3D utilizando Three.js. Cada proyecto incluye una descripción de las funcionalidades implementadas, las tecnologías utilizadas y los resultados obtenidos.
@@ -31,6 +38,8 @@ El proyecto utiliza las siguientes dependencias de npm:
 2.react-icons: Para utilizar iconos en el portafolio.
 3.react-multi-carousel: Para crear un carrusel de proyectos.
 4.SweetAlert : Para alertas personalizadas 
+5.Three Js : Animaciones 3D
+
 ```
 
 # Ejecución
