@@ -2,7 +2,7 @@
 
 Este es mi portafolio personal, creado con React y Vite.
 
-# Puedes verlo Ingresnado al siguiente Link 
+# Puedes verlo Ingresando al siguiente Link 
 
 ```bash
 https://michaelgonzalez-bit.github.io/Portafolio/
